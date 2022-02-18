@@ -1,0 +1,402 @@
+:root {
+  --theme-accent: #ffc700;
+  --theme-main: #ffffff;
+  --theme-bgd: #222527;
+  --theme-modal--bgd: #e5e5e5;
+  --theme-accent-light: #4b526a;
+  --theme-btn-text: #060803;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-family: "Montserrat", sans-serif;
+}
+
+.container {
+  max-width: 1200px;
+  height: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start; /* центрирование по горизонтали  */
+  position: relative;
+}
+
+.header {
+  padding: 32px 0 72px 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.about-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.about {
+  height: 100%;
+  width: 100%;
+  background-image: url("../img/space.jpg");
+  background-size: cover;
+  position: relative;
+  overflow: hidden; /*---обрезает все что вылазит за секцию*/
+  background-attachment: fixed; /*--эффест парралакс*/
+}
+
+.about-name {
+  color: var(--theme-accent);
+  font-family: Montserrat;
+  font-style: italic;
+  font-weight: bold;
+  font-size: 46px;
+  line-height: 60px;
+  margin-bottom: 24px;
+}
+
+.about-profession {
+  font-family: Montserrat;
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--theme-main);
+  margin-bottom: 16px;
+}
+
+.about-positions {
+  font-family: Montserrat;
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--theme-accent);
+  margin-bottom: 8px;
+  list-style: disc;
+  margin-left: 18px;
+}
+
+.about-positions-text {
+  color: var(--theme-main);
+}
+
+.about-button {
+  order: 0;
+  outline: 0;
+  font-family: Montserrat;
+  margin-top: 24px;
+  padding: 16px 32px 16px 32px;
+  color: var(--theme-btn-text);
+  background-color: var(--theme-accent);
+  border-radius: 38px;
+  cursor: pointer;
+}
+
+.about-description {
+  font-family: Montserrat;
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--theme-main);
+}
+
+.about-content-row {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 60px;
+}
+
+.darth-vader-img {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+.death-star-img {
+  position: absolute;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  margin: auto;
+  bottom: -106px;
+  opacity: 0.4;
+}
+
+.achivements {
+  padding: 60px 0;
+  background: var(--theme-bgd);
+}
+
+.achivements_header {
+  color: var(--theme-accent);
+  font-family: Montserrat;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 24px;
+  margin-bottom: 60px;
+}
+
+.achivements-icon {
+  width: 60px;
+  height: 60px;
+}
+
+.achivements-items {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.achivements-item-header {
+  font-family: Montserrat;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--theme-accent);
+  margin: 32px 0 4px 0;
+}
+
+.achivents-item-text {
+  font-family: Montserrat;
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--theme-main);
+}
+
+.achivements-item {
+  width: 25%;
+}
+
+.about-social {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  right: 0;
+  top: 29%;
+}
+
+.social-link {
+  margin-bottom: 26px;
+}
+
+.social-link svg {
+  fill: var(--theme-accent);
+}
+
+.codex {
+  padding: 186px 0;
+  background-image: url("../img/space.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.codex .container {
+  flex-direction: row;
+}
+
+.codex-left-side,
+.codex-right-side {
+  width: 50%;
+}
+
+.codex-left-side {
+  color: var(--theme-accent);
+  font-family: Montserrat;
+  font-style: italic;
+  font-weight: bold;
+  font-size: 46px;
+  line-height: 60px;
+  letter-spacing: 0.02em;
+}
+
+.codex-tittle {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--theme-accent);
+  margin-bottom: 32px;
+}
+
+.codex-text {
+  font-family: Montserrat;
+  color: var(--theme-main);
+  font-size: 16px;
+  line-height: 24px;
+  margin-bottom: 4px;
+}
+
+.codex-text--last {
+  margin-bottom: 60px;
+}
+
+.footer {
+  padding: 60px 0 60px 0;
+  background: var(--theme-bgd);
+}
+
+.footer .container {
+  align-items: center;
+}
+
+.footer-tittle {
+  font-family: Montserrat;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  color: var(--theme-main);
+  width: 740px;
+  margin-bottom: 40px;
+}
+
+/* модельное окно */
+
+.model-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: var(--theme--modal-bgd);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.modal-form {
+  padding: 40px 80px;
+  background: var(--theme-bgd);
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.close-icon {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  background: none;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.modal-form-submit {
+  order: 0;
+  outline: 0;
+  font-size: 16px;
+  line-height: 24px;
+  font-family: Montserrat;
+  padding: 16px 32px 16px 32px;
+  background: var(--theme-accent);
+  border-radius: 38px;
+  cursor: pointer;
+  margin-top: 24px;
+  color: var(--theme-btn-text);
+}
+
+.modal-form-tittle {
+  font-family: Montserrat;
+  margin-bottom: 4px;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  color: var(--theme-accent);
+}
+
+.modal-form-text {
+  font-family: Montserrat;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  color: var(--theme-main);
+  margin-bottom: 32px;
+}
+
+.modal-form-field {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 16px;
+}
+
+.modal-form-lable {
+  font-family: Montserrat;
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--theme-main);
+  margin-bottom: 4px;
+}
+
+.modal-form-name,
+.modal-form-email {
+  width: 440px;
+  height: 40px;
+  outline: none;
+  border: 1px solid var(--theme-main);
+  padding: 6px;
+  box-sizing: border-box;
+  background-color: var(--theme-bgd);
+  color: var(--theme-main);
+}
+
+.modal-active {
+  opacity: 1;
+  pointer-events: all;
+}
+
+.modal-success {
+  padding: 80px 40px 88px 40px;
+  background: var(--theme-bgd);
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.modal-success-tittle {
+  font-family: Montserrat;
+  margin-bottom: 4px;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  color: var(--theme-accent);
+  margin-bottom: 112px;
+}
+
+.modal-success-text {
+  width: 600px;
+  font-family: Montserrat;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  color: var(--theme-main);
+  margin-bottom: 36px;
+}
+
+/* стили на переключение темы */
+
+.logo svg,
+.achivements-icon svg,
+.footer svg,
+.modal-success-icon svg {
+  fill: var(--theme-accent);
+}
+
+.close-icon svg {
+  color: var(--theme-main);
+}
+
+.about--light,
+.codex--light {
+  background-image: url("../img/stardust.jpg");
+}
